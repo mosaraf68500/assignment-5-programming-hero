@@ -32,7 +32,7 @@
                 <div class="navbar-end  lg:flex">
                   
                     <img class="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]" src="./assets/coin.png" alt="">
-                    <span class="ml-2 text-xs lg:text-xl">5500 BDT</span>
+                    <span class="ml-2 text-xs lg:text-xl" id="current-balance">5500 BDT</span>
                   
                 </div>
               </div>
@@ -58,8 +58,11 @@
             <!-- text section -->
              <div class="space-y-4 ">
                 <div class="">
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                    <img class="w-[20px] lg:w-[30px]" src="./assets/coin.png" alt="">00 BDT</button></div>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg " >
+                    <img class="w-[20px] lg:w-[30px]" src="./assets/coin.png" alt=""><span id="noakhali-current-donation-amout">00 BDT</span></button>
+                </div>
+
+              
 
                 <h1 class="lg:text-2xl text-xl font-bold text-[#111111] ">Donate for Flood at Noakhali, Bangladesh</h1>
 
@@ -70,10 +73,31 @@
 
                       type="text"
                         placeholder=" Write Donation Amout "
+                        id="noakhali-donation-field"
                          class="input input-bordered w-full  bg-gray-100"
                            />
 
-                           <button class="btn w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]">Donate Now</button>
+                           <!-- <button id="noakhali-donate-btn" class="btn w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]" >Donate Now</button> -->
+
+
+                             <!-- Open the modal using ID.showModal() method -->
+                    <button id="noakhali-donate-btn" class="btn  w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]">Donate Now</button>
+                    
+                     <!-- The modal -->
+                     <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box text-center space-y-3">
+                     <h3 class="text-lg font-bold">Congrates!</h3>
+                     <img class="mx-auto" src="./assets/coin.png" alt="">
+                       <p class="py-4 text-sm text-gray-500">You Have Donate for Hamankind</p>
+                       <h1 class="font-bold text-lg">Successfully</h1>
+                      <div class="">
+                     <form method="dialog">
+                       <!-- if there is a button in form, it will close the modal -->
+                  <div class="flex justify-center items-center"><button class="btn mx-auto">Close Configration</button></div>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 
              </div>
@@ -89,8 +113,8 @@
             <!-- text section -->
              <div class="space-y-4 ">
                 <div class="">
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                    <img class="w-[20px] lg:w-[30px]"  src="./assets/coin.png" alt="">600 BDT</button></div>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" >
+                    <img class="w-[20px] lg:w-[30px]"  src="./assets/coin.png" alt=""><span id="feni-current-donation-amout"> 600 BDT</span></button></div>
 
                 <h1 class="lg:text-2xl text-xl font-bold text-[#111111] ">Donate for Flood Relief in Feni,Bangladesh</h1>
 
@@ -98,13 +122,13 @@
 
                 
                 <input 
-
                       type="text"
+                      id="feni-donation-field"
                         placeholder=" Write Donation Amout "
                          class="input input-bordered w-full  bg-gray-100"
                            />
 
-                           <button class="btn w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]">Donate Now</button>
+                           <button class="btn w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]" id="feni-donate-btn">Donate Now</button>
 
 
              </div>
@@ -122,8 +146,9 @@
             <!-- text section -->
              <div class="space-y-4 ">
                 <div class="">
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                    <img class="w-[20px] lg:w-[30px]"  src="./assets/coin.png" alt="">2400 BDT</button></div>
+                    <button  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                    <img class="w-[20px] lg:w-[30px]"  src="./assets/coin.png" alt=""><span id="quata-current-donation-amout">2400 BDT</span>
+                </button></div>
 
                 <h1 class="lg:text-2xl text-xl font-bold text-[#111111] ">Aid for Injured in the Quota Movement</h1>
 
@@ -134,10 +159,11 @@
 
                       type="text"
                         placeholder=" Write Donation Amout "
+                        id="quata-donation-field"
                          class="input input-bordered w-full  bg-gray-100"
                            />
 
-                           <button class="btn w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]">Donate Now</button>
+                           <button id="quata-donate-btn" class="btn w-full bg-[#B4F461] sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#7fc722]">Donate Now</button>
 
 
              </div>
@@ -149,6 +175,7 @@
 
     </footer>
 
-    <script src="js/index.js"></script>
+     <script src="./js/libray function.js"></script>
+    <script src="js/noakhali donation.js"></script>
 </body>
 </html>
