@@ -1,16 +1,16 @@
 
 // noakhali section start
- const click=document.getElementById('noakhali-donate-btn')
-.addEventListener('click', function(evet){
+ document.getElementById('noakhali-donate-btn')
+.addEventListener('click', function(event){
 
-    evet.preventDefault();
+    event.preventDefault();
     const donateAmout=donateNow('noakhali-donation-field');
     const CurrentDonationAmout=currentDonationAmout('noakhali-current-donation-amout');
     const currentBalance=getcurrentBalance('current-balance');
     // donateAmout=donateNow()
 
 
-    if(typeof donateAmout==='number'  && donateAmout>0){
+    if(typeof donateAmout==='number'  && donateAmout>0 && currentBalance>=donateAmout){
         const newDonationAmout=donateAmout+CurrentDonationAmout;
         document.getElementById('noakhali-current-donation-amout').innerText=newDonationAmout+ " " +"BDT";
         const newCurrentBalance=currentBalance-donateAmout;
@@ -35,16 +35,18 @@
 
 // feni section start
 document.getElementById('feni-donate-btn')
-.addEventListener('click', function(evet){
+.addEventListener('click', function(event){
 
-    evet.preventDefault();
+    event.preventDefault();
+
+    console.log("click feni donation btn");
     const feniDonateAmout=donateNow('feni-donation-field');
     const feniCurrentDonationAmout=currentDonationAmout('feni-current-donation-amout');
     const currentBalance=getcurrentBalance('current-balance');
     
 
 
-    if(typeof feniDonateAmout==='number'  && feniDonateAmout>0){
+    if(typeof feniDonateAmout==='number'  && feniDonateAmout>0 && currentBalance>=feniDonateAmout){
         const feniNewDonationAmout=feniDonateAmout+feniCurrentDonationAmout;
         document.getElementById('feni-current-donation-amout').innerText=feniNewDonationAmout+ " " +"BDT";
         const newCurrentBalance=currentBalance-feniDonateAmout;
@@ -78,7 +80,7 @@ document.getElementById('quata-donate-btn')
     
 
 
-    if(typeof quataDonateAmout==='number'  && quataDonateAmout>0){
+    if(typeof quataDonateAmout==='number'  && quataDonateAmout>0 && currentBalance>=quataDonateAmout){
         const quataNewDonationAmout=quataDonateAmout + quataCurrentDonationAmout;
         // console.log(quataNewDonationAmout);
         document.getElementById('quata-current-donation-amout').innerText=quataNewDonationAmout+ " " +"BDT";
@@ -89,6 +91,7 @@ document.getElementById('quata-donate-btn')
     // const quataDonateAmout=donateNow('quata-donation-field');
     // const quataDonateAmout=donateNow('quata-donation-field');
     document.getElementById('quata-donation-field').value='';
+    console.log("click me")
 
         
     }
