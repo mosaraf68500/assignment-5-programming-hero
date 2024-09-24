@@ -39,3 +39,14 @@ function getdonationHistory(id){
     document.getElementById(id).classList.remove("hidden");
     
 }
+
+
+document.getElementById('blog-page')
+.addEventListener('click', function(){
+
+    window.location.href = "home.html";
+    console.log("Blog page clicked");
+
+});
+  
+

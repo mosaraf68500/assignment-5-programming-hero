@@ -104,7 +104,7 @@ document.getElementById('feni-donate-btn')
 // feni section end
 
 
-// Aid for Injured in the Quota Movement
+// Aid for Injured in the Quota Movement start
 
 
 
@@ -161,5 +161,5 @@ document.getElementById('quata-donate-btn')
 
 
 
-// Aid for Injured in the Quota Movement
+// Aid for Injured in the Quota Movement end
 

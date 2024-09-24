@@ -36,18 +36,18 @@
                 <div class="navbar-start">
                    
                   
-                  <a href="./index.html" class="btn text-xs lg:text-xl hover:bg-[#166e9a] bg-[#6ba8c6] text-white" scr="">Home</a>
+                  <a id="home-page" class="btn text-xs lg:text-xl hover:bg-[#166e9a] bg-[#3193c4] text-white" >Home</a>
                 </div>
                 <div class="navbar-center lg:flex text-xl">
                   
                     <img class="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"  src="./assets/logo.png" alt="">
-                    <span class="ml-2 text-xs lg:text-xl font-bold text-[#111111]">Donate Bangladesh</span>
+                    <span class="ml-2 text-xs lg:text-xl font-bold text-[#343434]">Donate Bangladesh</span>
                   
                 </div>
                 <div class="navbar-end  lg:flex">
                   
                     <img class="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]" src="./assets/coin.png" alt="">
-                    <span class="ml-2 text-xs lg:text-xl" id="current-balance text-gray-600">5500 BDT</span>
+                    <span class="ml-2 text-xs lg:text-xl text-gray-600 font-semibold" id="current-balance">5500 BDT</span>
                   
                 </div>
               </div>
@@ -67,45 +67,49 @@
         <section class="space-y-3">
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-lg font-medium">What is the DOM in JavaScript, and how does it work?</div>
+                <div class="collapse-title text-lg font-medium text-gray-800">What is the DOM in JavaScript, and how does it work?</div>
                 <div class="collapse-content">
-                  <p>write your answer here...</p>
+                  <p class="text-[14px] text-gray-600">The Document Object Model (DOM) is a programming interface for web documents. It represents a webpage's structure as a tree of objects, where each node corresponds to a part of the document (like elements, attributes, or text). JavaScript can interact with the DOM to dynamically update content and styles.</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-lg font-medium">How can you select an element in the DOM using JavaScript?</div>
+                <div class="collapse-title text-lg font-medium text-gray-800">How can you select an element in the DOM using JavaScript?</div>
                 <div class="collapse-content">
-                  <p>write your answer here...</p>
+                  <p class="text-[14px] text-gray-600">To select an element in the DOM, you can use methods like `document.getElementById()` for an ID, `document.getElementsByClassName()` for a class, `document.getElementsByTagName()` for a tag, or `document.querySelector()` and `document.querySelectorAll()` for more complex CSS-style selectors. These return elements for further manipulation.</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-lg font-medium">How do you add or remove elements in the DOM dynamically?</div>
+                <div class="collapse-title text-lg font-medium text-gray-800">How do you add or remove elements in the DOM dynamically?</div>
                 <div class="collapse-content">
-                  <p>write your answer here...</p>
-                </div>
-              </div>
-
-              <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-lg font-medium">What are event listeners, and how do they interact with the DOM?</div>
-                <div class="collapse-content">
-                  <p>write your answer here...</p>
+                  <p class="text-[14px] text-gray-600">To add elements in the DOM dynamically, use methods like `document.createElement()` to create the element and `parent.appendChild()` or `parent.insertBefore()` to insert it. To remove elements, use `element.remove()` or `parent.removeChild(element)`. These methods allow dynamic manipulation of the DOM structure.</p>
                 </div>
               </div>
 
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-lg font-medium">How can you modify an element's attributes or styles in the DOM?</div>
+                <div class="collapse-title text-lg font-medium text-gray-800">What are event listeners, and how do they interact with the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-[14px] text-gray-600">Event listeners are functions that wait for specific events (e.g., clicks, keypresses) on DOM elements. Using `element.addEventListener()`, you can attach an event listener to an element, specifying the event type (e.g., "click") and a callback function. When the event occurs, the callback is executed, enabling dynamic interaction with the DOM.</p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-lg font-medium text-gray-800">How can you modify an element's attributes or styles in the DOM?</div>
                 <div class="collapse-content" id="text">
-                    <p>write your answer here...</p>
+                    <p class="text-[14px] text-gray-600">To modify an element's attributes in the DOM, use methods like `element.setAttribute()` to set attributes or `element.removeAttribute()` to remove them. For modifying styles, use the `element.style` property to directly set CSS properties (e.g., `element.style.color = "blue"`). You can also add or remove CSS classes using `element.classList.add()` and `element.classList.remove()`.</p>
 
                 </div>
               </div>
         </section>
     </main>
 
-    <script src="./js/home.js"></script>
+    <script src="./js/click2.js"></script>
+    <script src="./js/click btn.js"></script>
+     <script src="./js/libray function.js"></script>
+    <script src="js/noakhali donation.js"></script>
+    <script src="./js/go to page.js"></script>
 </body>
 </html>
