@@ -27,3 +27,15 @@ function getcurrentBalance(id){
     return parseFloat(currentBalance);
 
 }
+
+
+
+
+// donation && history button click
+
+function getdonationHistory(id){
+    document.getElementById('donation-Section').classList.add("hidden");
+    document.getElementById('history-Section').classList.add("hidden");
+    document.getElementById(id).classList.remove("hidden");
+    
+}

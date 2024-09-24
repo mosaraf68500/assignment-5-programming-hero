@@ -18,6 +18,25 @@
         my_modal_1.showModal();
         document.getElementById('noakhali-donation-field').value='';
 
+        // added transaction
+        transactionList=document.createElement('li');
+        // transactionList.innerText=donateAmout+" BDT donated on "+new Date().toLocaleString();
+
+     transactionList.innerHTML=`<div class=" bg-white text-gray-700 p-4 rounded shadow-md ">
+     <p class="font-bold">${donateAmout} Taka is Donate for Flood at Noakhali, Bangladesh
+</p>  
+     <p class="text-[14px]"> date: ${new Date().toLocaleString(2)} </p>
+     </div>
+     
+     `;
+
+        document.getElementById('historyList').appendChild(transactionList);
+        // transactionList.appendChild(transaction);
+
+
+
+
+
 
         
     }
@@ -39,7 +58,7 @@ document.getElementById('feni-donate-btn')
 
     event.preventDefault();
 
-    console.log("click feni donation btn");
+    // console.log("click feni donation btn");
     const feniDonateAmout=donateNow('feni-donation-field');
     const feniCurrentDonationAmout=currentDonationAmout('feni-current-donation-amout');
     const currentBalance=getcurrentBalance('current-balance');
@@ -53,6 +72,26 @@ document.getElementById('feni-donate-btn')
         document.getElementById('current-balance').innerText=newCurrentBalance+ " " +"BDT";
         my_modal_1.showModal();
         document.getElementById('feni-donation-field').value='';
+
+        // added transaction
+        transactionList=document.createElement('li');
+        // transactionList.innerText=donateAmout+" BDT donated on "+new Date().toLocaleString();
+
+     transactionList.innerHTML=`<div class=" bg-white text-gray-700 p-4 rounded shadow-md ">
+     <p class="font-bold">${feniDonateAmout} Taka is Donate for Flood Relief in Feni,Bangladesh
+
+</p>  
+     <p> ${new Date().toLocaleString(2)} </p>
+     </div>
+     
+     `;
+
+        document.getElementById('historyList').appendChild(transactionList);
+        // transactionList.appendChild(transaction);
+
+
+
+
 
 
         
@@ -91,7 +130,27 @@ document.getElementById('quata-donate-btn')
     // const quataDonateAmout=donateNow('quata-donation-field');
     // const quataDonateAmout=donateNow('quata-donation-field');
     document.getElementById('quata-donation-field').value='';
-    console.log("click me")
+
+
+
+    // added transaction
+    transactionList=document.createElement('li');
+    // transactionList.innerText=donateAmout+" BDT donated on "+new Date().toLocaleString();
+
+ transactionList.innerHTML=`<div class=" bg-white text-gray-700 p-4 rounded shadow-md ">
+ <p class="font-bold">${quataDonateAmout} Taka is Donated Aid for Injured in the Quota Movement
+</p>  
+ <p> ${new Date().toLocaleString(2)} </p>
+ </div>
+ 
+ `;
+
+    document.getElementById('historyList').appendChild(transactionList);
+    // transactionList.appendChild(transaction);
+
+
+
+
 
         
     }
