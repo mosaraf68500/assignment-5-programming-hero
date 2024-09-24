@@ -41,7 +41,7 @@
         
     }
     else{
-        alert('Please enter a valid donation amount');
+        alert('Please enter a valid donation amount !');
         
     }
 });
@@ -81,7 +81,7 @@ document.getElementById('feni-donate-btn')
      <p class="font-bold">${feniDonateAmout} Taka is Donate for Flood Relief in Feni,Bangladesh
 
 </p>  
-     <p> ${new Date().toLocaleString(2)} </p>
+     <p class="text-[14px]"> date: ${new Date().toLocaleString(2)} </p>
      </div>
      
      `;
@@ -97,7 +97,7 @@ document.getElementById('feni-donate-btn')
         
     }
     else{
-        alert('Please enter a valid donation amount');
+        alert('Please enter a valid donation amount !');
     }
 });
 
@@ -140,7 +140,7 @@ document.getElementById('quata-donate-btn')
  transactionList.innerHTML=`<div class=" bg-white text-gray-700 p-4 rounded shadow-md ">
  <p class="font-bold">${quataDonateAmout} Taka is Donated Aid for Injured in the Quota Movement
 </p>  
- <p> ${new Date().toLocaleString(2)} </p>
+ <p class="text-[14px]">date: ${new Date().toLocaleString(2)} </p>
  </div>
  
  `;
@@ -155,7 +155,7 @@ document.getElementById('quata-donate-btn')
         
     }
     else{
-        alert('Please enter a valid donation amount');
+        alert('Please enter a valid donation amount !');
     }
 });
 
